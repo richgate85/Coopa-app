@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#22A65B" />
+    <title>Coopa - Offline</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+        padding: 40px 30px;
+        text-align: center;
+      }
+
+      .logo {
+        width: 80px;
+        height: 80px;
+        background: #22a65b;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 30px;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+      }
+
+      h1 {
+        color: #1f2937;
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        color: #6b7280;
+        font-size: 16px;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .illustration {
+        width: 120px;
+        height: 120px;
+        margin: 30px auto;
+        opacity: 0.8;
+      }
+
+      .features {
+        background: #f9fafb;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 30px 0;
+        text-align: left;
+      }
+
+      .features h3 {
+        color: #1f2937;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #4b5563;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .feature-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .feature-icon {
+        color: #22a65b;
+        font-weight: bold;
+        flex-shrink: 0;
+      }
+
+      .button-group {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+      }
+
+      button {
+        flex: 1;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary {
+        background: #22a65b;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background: #1b8a4a;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(34, 166, 91, 0.3);
+      }
+
+      .btn-secondary {
+        background: #e5e7eb;
+        color: #1f2937;
+      }
+
+      .btn-secondary:hover {
+        background: #d1d5db;
+      }
+
+      .tips {
+        background: #fef3c7;
+        border-left: 4px solid #f59e0b;
+        padding: 15px;
+        border-radius: 4px;
+        margin-top: 20px;
+        text-align: left;
+      }
+
+      .tips h4 {
+        color: #92400e;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+
+      .tips p {
+        color: #78350f;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .tips p + p {
+        margin-top: 8px;
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 30px 20px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        .button-group {
+          flex-direction: column;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .illustration {
+        animation: float 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">C</div>
+
+      <h1>You're Currently Offline</h1>
+      <p class="subtitle">Don't worry, you can still view your cached data. We'll sync any changes when you're back online.</p>
+
+      <svg class="illustration" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="80" fill="#e5e7eb" opacity="0.3" />
+        <path
+          d="M100 40 L140 80 L140 160 Q140 170 130 170 L70 170 Q60 170 60 160 L60 80 Z"
+          fill="#22a65b"
+          opacity="0.8"
+        />
+        <circle cx="100" cy="120" r="15" fill="white" />
+        <path d="M85 105 L115 105 M100 90 L100 120" stroke="#22a65b" stroke-width="2" stroke-linecap="round" />
+        <line x1="140" y1="60" x2="160" y2="40" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+        <line x1="160" y1="60" x2="140" y2="40" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+      </svg>
+
+      <div class="features">
+        <h3>Available Offline Features</h3>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span>View your dashboard</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span>Browse cached bulk buy requests</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span>Review member payment lists</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span>View saved reports</span>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button class="btn-primary" onclick="location.reload()">Try Again</button>
+        <button class="btn-secondary" onclick="history.back()">Go Back</button>
+      </div>
+
+      <div class="tips">
+        <h4>Tips</h4>
+        <p>Check your internet connection</p>
+        <p>Some features require internet access</p>
+      </div>
+    </div>
+
+    <script>
+      // Check connection status periodically
+      setInterval(() => {
+        if (navigator.onLine) {
+          console.log("[v0] Connection restored, reloading...")
+          location.reload()
+        }
+      }, 2000)
+    </script>
+  </body>
+</html>
