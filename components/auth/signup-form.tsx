@@ -163,7 +163,7 @@ export default function SignUpForm() {
           uid: user.uid,
           displayName: form.fullName || user.displayName || undefined,
           email: user.email || undefined,
-          photoURL: user.photoURL || undefined,
+          // photoURL: user.photoURL || undefined,
           role: 'member',
         })
 

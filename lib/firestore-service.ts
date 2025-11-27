@@ -21,7 +21,7 @@ export type UserProfile = {
   uid: string
   displayName?: string
   email?: string
-  photoURL?: string
+  // photoURL?: string
   role: 'super_admin' | 'coop_admin' | 'member' | 'invited'
   coopId?: string | null
   createdAt?: any

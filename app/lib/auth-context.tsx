@@ -39,7 +39,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             uid: u.uid,
             displayName: u.displayName || undefined,
             email: u.email || undefined,
-            photoURL: u.photoURL || undefined,
+            // photoURL: u.photoURL || undefined,
             role: 'member',
           });
         }
