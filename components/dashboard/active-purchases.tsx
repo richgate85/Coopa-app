@@ -50,8 +50,9 @@ function PurchaseCard({ id, itemName, quantitiy, targetPrice }: PurchaseCardProp
     <Card className="p-6 border border-gray-200">
       <div className="flex items-start justify-between mb-4">
         <div>
-          <h3 className="text-lg font-bold text-gray-900">{itemName}</h3>
-          <p className="text-sm text-gray-600 mt-1">{quantitiy}</p>
+          <h3 className="text-lg font-bold text-gray-900">Item Name: {itemName}</h3>
+          <p className="text-sm text-gray-600 mt-1">Quantity: {quantitiy}</p>
+          <p className="text-sm text-gray-600 mt-1">Target Price: ₦{targetPrice.toLocaleString()}</p>
         </div>
         <Badge className={`${statusColor} border-0`}>{status}</Badge>
       </div>
