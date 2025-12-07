@@ -35,13 +35,12 @@ interface BulkBuyData {
 // }
 
 interface PurchaseCardProps {
-  id: string;
   itemName: string;
   quantitiy: number;
   targetPrice: number;
 }
 
-function PurchaseCard({ id, itemName, quantitiy, targetPrice }: PurchaseCardProps) {
+function PurchaseCard({ itemName, quantitiy, targetPrice }: PurchaseCardProps) {
   // Prevent division by zero
   // const percentage = totalMembers > 0 ? Math.round((membersPaid / totalMembers) * 100) : 0;
   const statusColor = status === "Active" ? "bg-green-100 text-[#22A65B]" : "bg-gray-100 text-gray-600"
@@ -151,7 +150,7 @@ export function ActivePurchases() {
         ) : purchases.length > 0 ? (
           purchases.map((buy) => (
             <PurchaseCard
-              id={buy.id}
+              key={buy.id}
               itemName={buy.itemName}
               quantitiy={buy.quantitiy}
               targetPrice={buy.targetPrice}
