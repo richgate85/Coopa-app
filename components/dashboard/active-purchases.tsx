@@ -115,7 +115,7 @@ export function ActivePurchases() {
 
           return {
             id: doc.id,
-            item: data.itemName,           
+            itemName: data.itemName,           
             quantitiy: data.quantity || 0,       
             targetPrice: data.targetPrice || 0,
           } as BulkBuyData;
