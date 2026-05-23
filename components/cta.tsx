@@ -9,8 +9,13 @@ export default function CTA() {
           Ready to Unlock Your Cooperative's Advantage?
         </h2>
         <p className="text-lg text-white/90 mb-8 text-balance">Join 50+ cooperatives already saving together</p>
-        <Button className="bg-white hover:bg-gray-100 text-[#22A65B] text-base px-8 py-6 h-auto font-semibold flex items-center gap-2 mx-auto">
-          Get Started Free <ArrowRight size={20} />
+        <Button 
+          asChild 
+          className="bg-white hover:bg-gray-100 text-[#22A65B] text-base px-8 py-6 h-auto font-semibold flex items-center gap-2 mx-auto"
+        >
+          <a href="https://forms.gle/qX12c949KHV73yv7A" target="_blank" rel="noopener noreferrer">
+            Get Started Free <ArrowRight size={20} />
+          </a>
         </Button>
         <p className="text-sm text-white/80 mt-6">No credit card required • Free to start</p>
       </div>
