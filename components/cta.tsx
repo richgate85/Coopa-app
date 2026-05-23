@@ -8,7 +8,7 @@ export default function CTA() {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-balance">
           Ready to Unlock Your Cooperative's Advantage?
         </h2>
-        <p className="text-lg text-white/90 mb-8 text-balance">Join 50+ cooperatives already saving together</p>
+        <p className="text-lg text-white/90 mb-8 text-balance">Join 50+ groups already saving together</p>
         <Button 
           asChild 
           className="bg-white hover:bg-gray-100 text-[#22A65B] text-base px-8 py-6 h-auto font-semibold flex items-center gap-2 mx-auto"

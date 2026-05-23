@@ -23,12 +23,6 @@ export default function Hero() {
                 Start Buying in Bulk <ArrowRight size={20} />
               </a>
             </Button>
-            <Button
-              variant="outline"
-              className="border-2 border-[#22A65B] text-[#22A65B] hover:bg-[#E8F5E9] text-base px-8 py-6 h-auto bg-transparent"
-            >
-              See How It Works
-            </Button>
           </div>
         </div>
 

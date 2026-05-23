@@ -36,12 +36,6 @@ export default function Navigation() {
 
         {/* Links */}
         <div className="hidden items-center space-x-6 md:flex">
-          <Link href="/#how-it-works" className="text-gray-600 hover:text-green-600">
-            How It Works
-          </Link>
-          <Link href="/pricing" className="text-gray-600 hover:text-green-600">
-            Pricing
-          </Link>
         </div>
 
         {/* 2. Show different buttons based on login state */}
