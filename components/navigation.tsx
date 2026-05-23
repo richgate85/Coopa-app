@@ -67,19 +67,13 @@ export default function Navigation() {
           ) : (
             // --- IF USER IS LOGGED OUT ---
             <>
-              <Link
-                href="/login"
-                className="text-sm font-medium text-gray-600 hover:text-green-600"
-              >
-                Login
-              </Link>
               <a
                 href="https://forms.gle/qX12c949KHV73yv7A"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700"
               >
-                Sign Up
+                Join Cooperative
               </a>
             </>
           )}
