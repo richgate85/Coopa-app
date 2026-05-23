@@ -1,7 +1,7 @@
 import { Facebook, Twitter, Linkedin, MessageCircle } from "lucide-react"
 
 export default function Footer() {
-  const whatsappMessage = encodeURIComponent("i want to join Everyday People cooperative");
+  const whatsappMessage = encodeURIComponent("i want to join the cooperative");
   const whatsappUrl = `https://wa.me/2349034905792?text=${whatsappMessage}`;
 
   return (
