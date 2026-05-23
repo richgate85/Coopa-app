@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -11,17 +12,16 @@ export default function Hero() {
             Buy Together. <span className="text-[#22A65B]">Pay Less. Unlock Bulk Power.</span>
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed text-balance">
-            Join cooperatives across Nigeria coordinating bulk purchases to unlock 20-30% cost savings on everyday goods
+            Join groups across Nigeria coordinating bulk purchases to unlock 20-30% cost savings on everyday goods
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button className="bg-[#22A65B] hover:bg-[#1B8A4A] text-white text-base px-8 py-6 h-auto flex items-center gap-2">
-              Start Buying in Bulk <ArrowRight size={20} />
-            </Button>
-            <Button
-              variant="outline"
-              className="border-2 border-[#22A65B] text-[#22A65B] hover:bg-[#E8F5E9] text-base px-8 py-6 h-auto bg-transparent"
+            <Button 
+              asChild
+              className="bg-[#22A65B] hover:bg-[#1B8A4A] text-white text-base px-8 py-6 h-auto flex items-center gap-2"
             >
-              See How It Works
+              <a href="https://forms.gle/qX12c949KHV73yv7A" target="_blank" rel="noopener noreferrer">
+                Start Buying in Bulk <ArrowRight size={20} />
+              </a>
             </Button>
           </div>
         </div>

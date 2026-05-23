@@ -1,6 +1,9 @@
 import { Facebook, Twitter, Linkedin, MessageCircle } from "lucide-react"
 
 export default function Footer() {
+  const whatsappMessage = encodeURIComponent("i want to join the cooperative");
+  const whatsappUrl = `https://wa.me/2349034905792?text=${whatsappMessage}`;
+
   return (
     <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -13,7 +16,8 @@ export default function Footer() {
               </div>
               <h3 className="font-bold text-lg">Coopa</h3>
             </div>
-            <p className="text-gray-400 text-sm">The Cooperative Advantage</p>
+            <p className="text-gray-400 text-sm">Powered by Everyday People Cooperative Union Limited</p>
+            <p className="text-gray-500 text-xs mt-2">Eziukwu Market Unity Line 8 Stockfish mkt</p>
           </div>
 
           {/* Center: Links */}
@@ -22,18 +26,15 @@ export default function Footer() {
               About
             </a>
             <a href="#" className="text-gray-400 hover:text-white transition">
-              How It Works
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white transition">
-              Pricing
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white transition">
               Contact
             </a>
           </div>
 
           {/* Right: Social Icons */}
           <div className="flex justify-end gap-4">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#22A65B] transition" title="Chat on WhatsApp">
+              <MessageCircle size={20} />
+            </a>
             <a href="#" className="text-gray-400 hover:text-[#22A65B] transition">
               <Facebook size={20} />
             </a>
@@ -50,8 +51,8 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
             <div className="flex items-center gap-2 text-gray-400">
               <MessageCircle size={18} className="text-[#22A65B]" />
-              <a href="https://wa.me/2348032252487" className="hover:text-[#22A65B] transition">
-                WhatsApp Support: +234 803 225 2487
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:text-[#22A65B] transition">
+                WhatsApp: 09034905792
               </a>
             </div>
             <a href="https://coopa.com.ng" className="text-gray-400 hover:text-[#22A65B] transition">
@@ -62,7 +63,7 @@ export default function Footer() {
 
         {/* Bottom: Copyright */}
         <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-          <p>© 2025 Coopa. Empowering Nigerian Cooperatives.</p>
+          <p>Powered by Everyday People Cooperative Union Limited</p>
         </div>
 
         {/* Additional Links */}

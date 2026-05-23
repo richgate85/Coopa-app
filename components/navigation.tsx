@@ -36,12 +36,6 @@ export default function Navigation() {
 
         {/* Links */}
         <div className="hidden items-center space-x-6 md:flex">
-          <Link href="/#how-it-works" className="text-gray-600 hover:text-green-600">
-            How It Works
-          </Link>
-          <Link href="/pricing" className="text-gray-600 hover:text-green-600">
-            Pricing
-          </Link>
         </div>
 
         {/* 2. Show different buttons based on login state */}
@@ -67,18 +61,14 @@ export default function Navigation() {
           ) : (
             // --- IF USER IS LOGGED OUT ---
             <>
-              <Link
-                href="/login"
-                className="text-sm font-medium text-gray-600 hover:text-green-600"
-              >
-                Login
-              </Link>
-              <Link
-                href="/signup"
+              <a
+                href="https://forms.gle/qX12c949KHV73yv7A"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700"
               >
-                Sign Up
-              </Link>
+                Join Cooperative
+              </a>
             </>
           )}
         </div>

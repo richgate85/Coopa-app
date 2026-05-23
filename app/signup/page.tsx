@@ -16,7 +16,7 @@ export default function SignUpPage() {
             quote="Coopa helped our cooperative save ₦850,000 on our last rice purchase. The platform made coordination seamless!"
             attribution="Ngozi Okafor, Secretary, Progress Co-op, Enugu"
             stats={[
-              { label: "50+ Co-ops", value: "50+" },
+              { label: "50+ Groups", value: "50+" },
               { label: "₦2.5M+ Saved", value: "₦2.5M+" },
               { label: "23% Avg Savings", value: "23%" },
             ]}
@@ -29,7 +29,7 @@ export default function SignUpPage() {
             quote="Coopa helped our cooperative save ₦850,000 on our last rice purchase. The platform made coordination seamless!"
             attribution="Ngozi Okafor, Secretary, Progress Co-op, Enugu"
             stats={[
-              { label: "50+ Co-ops", value: "50+" },
+              { label: "50+ Groups", value: "50+" },
               { label: "₦2.5M+ Saved", value: "₦2.5M+" },
               { label: "23% Avg Savings", value: "23%" },
             ]}
