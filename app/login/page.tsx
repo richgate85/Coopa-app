@@ -16,7 +16,7 @@ export default function LoginPage() {
             quote="The bulk buying coordination has transformed how we serve our members. Highly recommended!"
             attribution="Chukwudi Eze, Treasurer, Excel Co-operative, Lagos"
             stats={[
-              { label: "50+ Co-ops", value: "50+" },
+              { label: "50+ Groups", value: "50+" },
               { label: "₦2.5M+ Saved", value: "₦2.5M+" },
               { label: "23% Avg Savings", value: "23%" },
             ]}
@@ -29,7 +29,7 @@ export default function LoginPage() {
             quote="The bulk buying coordination has transformed how we serve our members. Highly recommended!"
             attribution="Chukwudi Eze, Treasurer, Excel Co-operative, Lagos"
             stats={[
-              { label: "50+ Co-ops", value: "50+" },
+              { label: "50+ Groups", value: "50+" },
               { label: "₦2.5M+ Saved", value: "₦2.5M+" },
               { label: "23% Avg Savings", value: "23%" },
             ]}
