@@ -73,12 +73,14 @@ export default function Navigation() {
               >
                 Login
               </Link>
-              <Link
-                href="/signup"
+              <a
+                href="https://forms.gle/qX12c949KHV73yv7A"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700"
               >
                 Sign Up
-              </Link>
+              </a>
             </>
           )}
         </div>
