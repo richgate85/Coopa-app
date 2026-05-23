@@ -12,7 +12,7 @@ export default function Hero() {
             Buy Together. <span className="text-[#22A65B]">Pay Less. Unlock Bulk Power.</span>
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed text-balance">
-            Join cooperatives across Nigeria coordinating bulk purchases to unlock 20-30% cost savings on everyday goods
+            Join groups across Nigeria coordinating bulk purchases to unlock 20-30% cost savings on everyday goods
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <Button 
